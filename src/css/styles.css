@@ -18,3 +18,56 @@ body {
   max-width: 320px;
   margin-bottom: 16px;
 }
+
+/* Estilos para la lista */
+.country-list{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.country__item{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  height: 30px;
+}
+
+.country__img{
+  width: 25px;
+  height: 15px;
+}
+
+.country__name{
+  font-size: 15px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: normal;
+}
+
+/* Estilos para la tarjeta */
+
+.country__name-container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  height: 30px;
+}
+
+.country__name-card{
+  font-size: 30px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+}
+
+.country__capital,
+.country__population,
+.country__languages{
+  height: 20px;
+}
+
+.country__title{
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+}
