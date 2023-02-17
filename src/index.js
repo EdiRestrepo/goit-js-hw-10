@@ -36,6 +36,10 @@ const countryInfo = document.querySelector('.country-info');
  */
 const searchCountry = debounce(event => {
   let country = event.target.value.trim();
+  if(country===''){
+    countryInfo.innerHTML = '';
+    countryList.innerHTML = '';
+  }
   if (country !== '') {
     console.log(fetchCountries(country));
     fetchCountries(country)
